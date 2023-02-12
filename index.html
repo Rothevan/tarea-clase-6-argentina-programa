@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <label for="">Calculemos con edades de sus familiares!</label>
+    <br>
+    <input type="number" placeholder="Cuántos familiares tiene?" id="family-members-amount">
+    <br>
+    <button onclick="setFamilyAmount()">Agregar Familiares</button>
+    <br>
+    <div id="ages"></div>
+    <button onclick="calculate()" style="display:None" id="calculate-button">Calcular</button>
+    <p id="result-average"></p>
+    <p id="result-smallest"></p>
+    <p id="result-biggest"></p>
+
+    <button onclick="location.reload()" style="display:none" id="reload-button">Volver a empezar</button>
+
+
+
+    <script src='index.js'></script>
+</body>
+</html>
