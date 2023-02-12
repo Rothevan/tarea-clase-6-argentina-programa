@@ -33,7 +33,9 @@ function calculate() {
     let agesArray = []
     let allAges = document.querySelectorAll(".ageinput")
     for (let i = 0; i < allAges.length; i++) {
+        if (allAges[i].value != 0){
 agesArray.push(allAges[i].value)
+}
     }
 calculateAverage(agesArray)
 calculateSmallest(agesArray)
